@@ -38,6 +38,20 @@ body {
 	color: #000
 }
 
+/* extra styling for top-header nav bar */
+.top-header .nav li {
+	padding-inline: 0;
+}
+
+.navbar-a {
+	padding: 10px;
+}
+
+.navbar-a:hover {
+	background-color: #BEB45A;
+    border-radius: 0.25rem;
+}
+
 .social-link img {
 	width: 20px;
 }
@@ -97,9 +111,11 @@ body {
 	text-align: center;
 	padding-block: 2em;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
@@ -108,11 +124,17 @@ body {
 
 .active-tag {
 	background-color: #BEB45A;
+	color: white;
 }
 
 .nav-pills .nav-link {
 	color: #000
 }
+
+.nav-item:hover {
+	cursor: pointer;
+}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
