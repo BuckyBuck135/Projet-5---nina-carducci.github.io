@@ -276,6 +276,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 	resize: none;
+	padding-left: 15px;
 }
 
 input[type="submit"] {
