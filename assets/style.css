@@ -120,14 +120,14 @@ body {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	/* color: #fff; */
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 
 .active-tag {
 	background-color: #BEB45A;
-	color: white;
+	/* color: white; */
 }
 
 .nav-pills .nav-link {
