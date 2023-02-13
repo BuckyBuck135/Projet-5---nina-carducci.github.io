@@ -154,7 +154,8 @@
         }
       });
       next =
-        imagesCollection[index] ||
+      // fixed bug: index => index -1 to go back to previous item in the array
+        imagesCollection[index - 1] ||
         imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -192,7 +193,8 @@
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      // fixed bug => index +1 to go to next item in the array
+      next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {
@@ -261,7 +263,6 @@
     }
   };
 })(jQuery);
-
 /////////////
 // WORKING CODE BELOW
 // (function($) {
