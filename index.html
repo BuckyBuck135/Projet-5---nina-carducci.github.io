@@ -6,10 +6,10 @@
 
 	<!-- Stylesheets & Fonts -->
 	<!-- <link rel="preload" href="./assets/bootstrap/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="stylesheet" media="all and (max-width: 1000px)" href="./assets/media-query-1000px.css">
-	<link rel="stylesheet" media="all and (max-width: 650px)" href="./assets/media-query-650px.css">
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" media="all and (max-width: 1000px)" href="./assets/css/media-query-1000px.css">
+	<link rel="stylesheet" media="all and (max-width: 650px)" href="./assets/css/media-query-650px.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" ref="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -179,39 +179,44 @@
 			</div>
 		</div>
 	</section>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./src/bootstrap.bundle.min.js"></script>
 	<!-- Upgraded jQuery to 3.6.3 -->
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./src/maugallery.js"></script>
+	<script src="./src/scripts.js"></script>
 	<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
-			"@type": "LocalBusiness",
-			"name": "Nina Carducci",
+			"@type": ["LocalBusiness", "Photographe", "Retouches", "Albums", "Shootings", "Impression"],
+			"name": "Nina Carducci Photographe",
 			"description": "Photographe professionnelle",
 			"image": "http://www.googleusercontent.com/assets/images/nina.webp",
 			"url": "https://nina-carducci-photographe.netlify.app/",
 			"telephone": "05 56 67 78 89",
 			"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine ",
-			"addressLocality": "Bordeaux",
-			"postalCode": "33200",
-			"addressCountry": "FR"
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+				},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "44.8466732",
+				"longitude": "-0.6065805"
 			},
 			"openingHoursSpecification": {
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": [
-				"Lundi",
-				"Mardi",
-				"Mercredi",
-				"Jeudi",
-				"vendredi"
-			],
-			"opens": "10:00",
-			"closes": "19:00"
-			},
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Lundi",
+					"Mardi",
+					"Mercredi",
+					"Jeudi",
+					"vendredi"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+				},
 			"priceRange": "50-400 €"
 		}
 		</script>
