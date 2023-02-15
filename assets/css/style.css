@@ -8,6 +8,10 @@ body {
 	font-style: normal;
 }
 
+html {
+	scroll-padding-top: 3em;
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
